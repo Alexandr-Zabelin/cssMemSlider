@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Slider</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="carousel">
+            <div class="carousel__inputs carousel__inputs_display_none">
+                <input type="radio" class="inputs__input" id="one" name="slider-buttons">
+                <input type="radio" class="inputs__input" id="two" name="slider-buttons">
+                <input type="radio" class="inputs__input" id="three" name="slider-buttons">
+                <input type="radio" class="inputs__input" id="four" name="slider-buttons">
+            </div>
+            <div class="carousel__slider-wrapper slider-wrapper">
+                <div class="slider-wrapper__slider">
+                    <div class="slider-wrapper__image-wrapper">
+                        <img src="./assets/media/memes/mem1.jpg" alt="Meme" class="slider-wrapper__image">
+                    </div>
+                    <div class="slider-wrapper__image-wrapper">
+                        <img src="./assets/media/memes/mem2.jpg" alt="Meme" class="slider-wrapper__image">
+                    </div>
+                    <div class="slider-wrapper__image-wrapper">
+                        <img src="./assets/media/memes/mem3.jpg" alt="Meme" class="slider-wrapper__image">
+                    </div>
+                    <div class="slider-wrapper__image-wrapper">
+                        <img src="./assets/media/memes/mem4.jpg" alt="Meme" class="slider-wrapper__image">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel__services">
+                <div class="carousel__labels">
+                    <label for="one" class="carousel__label"></label>
+                    <label for="two" class="carousel__label"></label>
+                    <label for="three" class="carousel__label"></label>
+                    <label for="four" class="carousel__label"></label>
+                </div>
+                <div class="carousel__subtitles-carousel subtitles-carousel">
+                    <div class="subtitle-carousel__slider-wrapper">
+                        <div class="subtitle-carousel__slider">
+                            <p class="subtitle-carousel__subtitle" lang="en" translate="no">Swag</p>
+                            <p class="subtitle-carousel__subtitle">Котлета</p>
+                            <p class="subtitle-carousel__subtitle">Мужики, кто транспонировал бутерброд?</p>
+                            <p class="subtitle-carousel__subtitle">Ммм хлебом запахло</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
