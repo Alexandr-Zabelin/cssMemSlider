@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-body {
+html {
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -71,11 +71,11 @@ body {
     justify-content: space-between;
     margin-top: min(5vw, 35px);
     width: 100%;
+    padding: 0 5%;
 }
 
 .subtitles-carousel {
     width: 60%;
-    text-align: center;
     height: 70px;
 }
 
@@ -96,8 +96,6 @@ body {
     width: 25%;
     height: 100%;
     font-size: 1rem;
-    line-height: 1.1rem;
-    
 }
 
 #two:checked ~
@@ -211,7 +209,58 @@ body {
 
 
 @media screen and (min-width: 720px) {
+    html {
+        font-size: 20px;
+    }
+
     .carousel__label:hover::after {
         background-color: rgb(77, 212, 235);
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    body {
+        font-size: 11px;
+    }
+
+    .carousel__services {
+        flex-direction: column;   
+        margin-top: 15px;
+    }
+
+    .subtitles-carousel {
+        width: 100%;
+    }
+
+    .carousel__labels {
+        order: -1;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .carousel__label {
+        width: 24px;
+        height: 24px;
+        margin-left: 6px;
+    }
+
+    .carousel__label:first-child {
+        margin-left: 0;
+    }
+    
+    .carousel__label::before {
+        width: 19px;
+        height: 19px;
+        left: 2px;
+        top: 2px;
+    }
+    
+    .carousel__label::after {
+        width: 11px;
+        height: 11px;
+        left: 6px;
+        top: 6px;
     }
 }
