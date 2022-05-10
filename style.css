@@ -1,15 +1,10 @@
-img {
-    width: 600px;
-    height: 400px;
-}
-
-.slider-wrapper__image-wrapper {
-    z-index: -1;
-}
-
-/* -------------------------------- */
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .display_none {
@@ -17,112 +12,126 @@ img {
 }
 
 .main__carousel {
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
 }
 
 .carousel {
-    width: 600px;
+    width: 50vw;
+    max-width: 700px;
 }
 
 .slider-wrapper {
-    position: relative;
-    width: 100%;
+    width: calc(100% - 8px);
     overflow: hidden;
     border-radius: 8px;
     border: 4px solid #eceff1;
-    height: 400px;
+    box-sizing: content-box;
+    height: 34vw;
+    max-height: 470px;
 }
 
 .slider-wrapper__slider {
     display: flex;
-    position: relative;
-    left: 0;
     transition-duration: .8s;
+    width: calc(min(700px, 50vw) * 4);
+}
+
+.slider-wrapper__image-wrapper {
+    height: 34vw;
+    max-height: 470px;
+    width: 50vw;
+    max-width: 700px;
+}
+
+.slider-wrapper__image {
+    width: 100%;
+    height: 100%;
 }
 
 #two:checked ~ 
 .slider-wrapper
 .slider-wrapper__slider {
-    transform: translateX(-600px);
+    transform: translateX(calc(min(700px, 50vw) * -1));
 }
 
 #three:checked ~ 
 .slider-wrapper
 .slider-wrapper__slider {
-    transform: translateX(-1200px);
+    transform: translateX(calc(min(700px, 50vw) * -2));
 }
 
 #four:checked ~ 
 .slider-wrapper
 .slider-wrapper__slider {
-    transform: translateX(-1800px);
+    transform: translateX(calc(min(700px, 50vw) * -3));
 }
 
 .carousel__services {
     display: flex;
     justify-content: space-between;
-    margin-top: 35px;
+    margin-top: min(5vw, 35px);
+    width: 100%;
 }
 
 .subtitles-carousel {
-    width: 300px;
-    height: 70px;
+    width: 60%;
     text-align: center;
+    height: 70px;
 }
 
 .subtitle-carousel__slider-wrapper {
     width: 100%;
-    height: 100%;
     overflow: hidden;
-    position: relative;
+    height: 100%
 }
 
 .subtitle-carousel__slider {
-    position: relative;
-    left: 0;
     transition-duration: .8s;
     display: flex;
-    width: 1600px;
+    width: 400%;
     height: 100%;
 }
 
 .subtitle-carousel__subtitle {
-    width: 300px;
+    width: 25%;
     height: 100%;
-    font-size: 20px;
-    line-height: 21px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    
 }
 
 #two:checked ~
 .carousel__services
 .subtitle-carousel__slider {
-    transform: translateX(-300px);
+    transform: translateX(-25%);
 }
 
 #three:checked ~
 .carousel__services
 .subtitle-carousel__slider {
-    transform: translateX(-600px);
+    transform: translateX(-50%);
 }
 
 #four:checked ~
 .carousel__services
 .subtitle-carousel__slider {
-    transform: translateX(-900px);
+    transform: translateX(-75%);
 }
 
 .carousel__labels {
     font-size: 0;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .carousel__label {
     width: 26px;
     height: 26px;
-    display: inline-block;
+    display: block;
     position: relative;
     cursor: pointer;
-    margin: 0 6px;
 }
 
 .carousel__label::before {
