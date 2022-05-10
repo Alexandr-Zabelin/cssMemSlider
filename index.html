@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
-        <div class="carousel">
-            <div class="carousel__inputs carousel__inputs_display_none">
-                <input type="radio" class="inputs__input" id="one" name="slider-buttons">
-                <input type="radio" class="inputs__input" id="two" name="slider-buttons">
-                <input type="radio" class="inputs__input" id="three" name="slider-buttons">
-                <input type="radio" class="inputs__input" id="four" name="slider-buttons">
-            </div>
+    <main class="main">
+        <div class="main__carousel carousel">
+            <input type="radio" class="inputs__input display_none" id="one" name="slider-buttons" checked>
+            <input type="radio" class="inputs__input display_none" id="two" name="slider-buttons">
+            <input type="radio" class="inputs__input display_none" id="three" name="slider-buttons">
+            <input type="radio" class="inputs__input display_none" id="four" name="slider-buttons">
             <div class="carousel__slider-wrapper slider-wrapper">
                 <div class="slider-wrapper__slider">
                     <div class="slider-wrapper__image-wrapper">
@@ -34,12 +32,6 @@
                 </div>
             </div>
             <div class="carousel__services">
-                <div class="carousel__labels">
-                    <label for="one" class="carousel__label"></label>
-                    <label for="two" class="carousel__label"></label>
-                    <label for="three" class="carousel__label"></label>
-                    <label for="four" class="carousel__label"></label>
-                </div>
                 <div class="carousel__subtitles-carousel subtitles-carousel">
                     <div class="subtitle-carousel__slider-wrapper">
                         <div class="subtitle-carousel__slider">
@@ -49,6 +41,12 @@
                             <p class="subtitle-carousel__subtitle">Ммм хлебом запахло</p>
                         </div>
                     </div>
+                </div>
+                <div class="carousel__labels">
+                    <label for="one" class="carousel__label"></label>
+                    <label for="two" class="carousel__label"></label>
+                    <label for="three" class="carousel__label"></label>
+                    <label for="four" class="carousel__label"></label>
                 </div>
             </div>
         </div>
