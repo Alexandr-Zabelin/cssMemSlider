@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -33,14 +33,14 @@ html {
 .slider-wrapper__slider {
     display: flex;
     transition-duration: .8s;
-    width: calc(min(700px, 50vw) * 4);
+    width: 400%;
+    transform: translateZ(0);
+    height: 100%;
 }
 
 .slider-wrapper__image-wrapper {
-    height: 34vw;
-    max-height: 470px;
-    width: 50vw;
-    max-width: 700px;
+    height: 100%;
+    width: 25%; 
 }
 
 .slider-wrapper__image {
@@ -51,19 +51,19 @@ html {
 #two:checked ~ 
 .slider-wrapper
 .slider-wrapper__slider {
-    transform: translateX(calc(min(700px, 50vw) * -1));
+    transform: translateX(-25%);
 }
 
 #three:checked ~ 
 .slider-wrapper
 .slider-wrapper__slider {
-    transform: translateX(calc(min(700px, 50vw) * -2));
+    transform: translateX(-50%);
 }
 
 #four:checked ~ 
 .slider-wrapper
 .slider-wrapper__slider {
-    transform: translateX(calc(min(700px, 50vw) * -3));
+    transform: translateX(-75%);
 }
 
 .carousel__services {
@@ -76,7 +76,7 @@ html {
 
 .subtitles-carousel {
     width: 60%;
-    height: 70px;
+    height: 100px;
 }
 
 .subtitle-carousel__slider-wrapper {
@@ -208,25 +208,32 @@ html {
 
 
 
-@media screen and (min-width: 720px) {
-    html {
-        font-size: 20px;
-    }
-
+@media screen and (min-width: 520px) {
     .carousel__label:hover::after {
         background-color: rgb(77, 212, 235);
     }
 }
 
+@media screen and (max-width: 768px) and (min-width: 520px) {
+    html {
+        font-size: 16px;
+    }
+}
+
 
 @media screen and (max-width: 520px) {
-    body {
-        font-size: 11px;
+    .carousel {
+        width: 90vw;
+    }
+
+    
+    .slider-wrapper {
+        height: 60vw;
     }
 
     .carousel__services {
         flex-direction: column;   
-        margin-top: 15px;
+        margin-top: 25px;
     }
 
     .subtitles-carousel {
@@ -237,7 +244,7 @@ html {
         order: -1;
         width: 100%;
         justify-content: center;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
 
     .carousel__label {
