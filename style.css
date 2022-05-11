@@ -248,26 +248,10 @@ html {
     }
 
     .carousel__label {
-        /* width: 24px;
-        height: 24px; */
-        margin-left: 10px;
+        margin-left: 15px;
     }
 
     .carousel__label:first-child {
         margin-left: 0;
     }
-    
-    /* .carousel__label::before {
-        width: 19px;
-        height: 19px;
-        left: 2px;
-        top: 2px;
-    }
-    
-    .carousel__label::after {
-        width: 11px;
-        height: 11px;
-        left: 6px;
-        top: 6px;
-    } */
 }
